@@ -4,7 +4,7 @@ namespace GoodHambuerger.Domain.Interfaces;
 
 public interface IOrderRepository
 {
-    void SendOrder(Order order);
+    void AddOrder(Order order);
     IEnumerable<Order> GetOrders();
     Order GetOrderById(int id);
     void UpdateOrder(Order order);
