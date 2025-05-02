@@ -16,6 +16,10 @@ public class ItemRepository : IItemRepository
     public IEnumerable<Item> GetItems()
         => _context.Items.ToList();
 
+    public Item GetItemById(int id)
+        => _context.Items
+            .FirstOrDefault(item => item.Id == id)!;
+
     public IEnumerable<Item> GetItemsExtraOnly()
         => _context.Items
             .Where(item => item.Type.Equals(ItemType.Extra))
