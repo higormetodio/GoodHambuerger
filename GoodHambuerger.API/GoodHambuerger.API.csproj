@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\GoodHambuerger.Application\GoodHambuerger.Application.csproj" />
     <ProjectReference Include="..\GoodHambuerger.Infrastructure\GoodHambuerger.Infrastructure.csproj" />
   </ItemGroup>
 
